@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study & Task Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Study & Task Tracker</h1>
+        <p class="subtitle">Keep track of daily assignments and coding practice</p>
+
+        <form id="task-form" class="input-group">
+            <input type="text" id="task-input" placeholder='For example: "Review SQL joins..."' required />
+            <select id="priority-select">
+            <option value="Low">Low</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="High">High</option>
+            </select>
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <div class="stats">
+            <span id="task-count">0 tasks remaining</span>
+            <button id="clear-btn" type="button">Clear Completed</button>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
